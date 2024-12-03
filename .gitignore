@@ -1,0 +1,7 @@
+/.idea/
+/backend/target/
+/frontend/node_modules/
+/frontend/node/
+/frontend/build/
+/frontend/target/
+/frontend/.vscode/
