@@ -1,0 +1,7 @@
+spring-boot:
+  fullnameOverride: "react-template"
+  appVersion: "0.0.0"
+  istio:
+    url: "react-template.rjst.de"
+  replicaCount: 1
+
