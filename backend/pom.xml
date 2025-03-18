@@ -145,14 +145,6 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <configuration>
-                    <excludes>
-                        <exclude>
-                            <groupId>org.projectlombok</groupId>
-                            <artifactId>lombok</artifactId>
-                        </exclude>
-                    </excludes>
-                </configuration>
                 <executions>
                     <execution>
                         <id>build-info</id>
@@ -162,11 +154,27 @@
                         <configuration>
                             <additionalProperties>
                                 <java.version>${java.version}</java.version>
-                                <description>${project.description}</description>
+                                <name>${project.parent.name}</name>
+                                <version>${project.parent.version}</version>
+                                <description>${project.parent.description}</description>
                             </additionalProperties>
                         </configuration>
                     </execution>
+                    <execution>
+                        <goals>
+                            <goal>process-aot</goal>
+                        </goals>
+                    </execution>
                 </executions>
+                <configuration>
+                    <image>
+                        <env>
+                            <BP_SPRING_AOT_ENABLED>false</BP_SPRING_AOT_ENABLED>
+                            <BP_JVM_CDS_ENABLED>false</BP_JVM_CDS_ENABLED>
+                        </env>
+                    </image>
+                    <imageName>${project.parent.name}:${project.parent.version}</imageName>
+                </configuration>
             </plugin>
         </plugins>
     </build>
