@@ -26,5 +26,11 @@
       "automerge": true
     }
   ],
-  "ignoreTests": true
+  "ignoreTests": true,
+  "maven": {
+    "ignoreDeps": [
+      "de.rjst:angular-template-parent",
+      "de.rjst:frontend"
+    ]
+  }
 }
