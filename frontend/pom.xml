@@ -16,6 +16,10 @@
     <name>frontend</name>
     <description>frontend</description>
 
+    <properties>
+        <node.version>v20.16.0</node.version>
+    </properties>
+
     <build>
         <plugins>
             <plugin>
@@ -24,8 +28,7 @@
                 <version>1.15.1</version>
                 <configuration>
                     <workingDirectory>./</workingDirectory>
-                    <nodeVersion>v20.16.0</nodeVersion>
-                    <npmVersion>10.8.3</npmVersion>
+                    <nodeVersion>${node.version}</nodeVersion>
                 </configuration>
                 <executions>
                     <execution>
