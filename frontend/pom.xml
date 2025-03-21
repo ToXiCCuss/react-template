@@ -17,7 +17,10 @@
     <description>frontend</description>
 
     <properties>
-        <node.version>v20.16.0</node.version>
+        <!-- renovate: datasource=node-version depName=node -->
+        <node.version>v20.13.1</node.version>
+        <!-- renovate: datasource=npm depName=npm -->
+        <npm.version>9.1.1</npm.version>
     </properties>
 
     <build>
@@ -29,6 +32,7 @@
                 <configuration>
                     <workingDirectory>./</workingDirectory>
                     <nodeVersion>${node.version}</nodeVersion>
+                    <npmVersion>${npm.version}</npmVersion>
                 </configuration>
                 <executions>
                     <execution>
