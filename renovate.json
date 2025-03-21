@@ -1,7 +1,11 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:best-practices"
+    "config:best-practices",
+    "customManagers:mavenPropertyVersions",
+    ":prConcurrentLimitNone",
+    ":prHourlyLimitNone",
+    "npm:unpublishSafe"
   ],
   "helmv3": {
     "enabled": false
@@ -9,11 +13,16 @@
   "automerge": true,
   "packageRules": [
     {
-      "matchUpdateTypes": ["major"],
+      "matchUpdateTypes": [
+        "major"
+      ],
       "automerge": false
     },
     {
-      "matchUpdateTypes": ["minor", "patch"],
+      "matchUpdateTypes": [
+        "minor",
+        "patch"
+      ],
       "automerge": true
     }
   ],
