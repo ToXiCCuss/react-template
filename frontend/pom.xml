@@ -19,8 +19,6 @@
     <properties>
         <!-- renovate: datasource=node-version depName=node -->
         <node.version>v20.19.0</node.version>
-        <!-- renovate: datasource=npm depName=npm -->
-        <npm.version>9.9.4</npm.version>
     </properties>
 
     <build>
@@ -32,7 +30,6 @@
                 <configuration>
                     <workingDirectory>./</workingDirectory>
                     <nodeVersion>${node.version}</nodeVersion>
-                    <npmVersion>${npm.version}</npmVersion>
                 </configuration>
                 <executions>
                     <execution>
