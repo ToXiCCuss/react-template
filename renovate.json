@@ -7,7 +7,6 @@
     "enabled": false
   },
   "automerge": true,
-  "automergeType": "pr",
   "packageRules": [
     {
       "matchUpdateTypes": ["major"],
