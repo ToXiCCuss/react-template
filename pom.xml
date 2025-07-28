@@ -16,7 +16,7 @@
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>react-template-parent</name>
-    <description>react Frontend</description>
+    <description>react frontend</description>
 
     <modules>
         <module>frontend</module>
