@@ -1,22 +1,4 @@
-#spring:
-#  datasource:
-#    url: jdbc:mariadb://vpn.rjst.de:3306/fivem
-#    username: root
-#    password: BzjtoSviEPoBt0G9iuxZsuIE56WUkO
-#    driver-class-name: org.mariadb.jdbc.Driver
-#  jpa:
-#    hibernate:
-#      ddl-auto: none
-#    show-sql: true
-
 server:
   error:
     include-stacktrace: never
-management:
-  endpoints:
-    web:
-      exposure:
-        include: '*'
-  endpoint:
-    health:
-      show-details: always
+    include-message: always

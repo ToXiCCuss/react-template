@@ -15,8 +15,8 @@
     <artifactId>react-template-parent</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
-    <name>angular-template</name>
-    <description>API of angular-template</description>
+    <name>react-template-parent</name>
+    <description>react Frontend</description>
 
     <modules>
         <module>frontend</module>
