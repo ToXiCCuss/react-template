@@ -15,6 +15,7 @@
     <artifactId>react-template-parent</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
+
     <name>react-template-parent</name>
     <description>react frontend</description>
 
