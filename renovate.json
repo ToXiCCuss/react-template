@@ -5,7 +5,7 @@
     "customManagers:mavenPropertyVersions",
     ":prConcurrentLimitNone",
     ":prHourlyLimitNone",
-    "npm:unpublishSafe"
+    "security:minimumReleaseAgeNpm"
   ],
   "helmv3": {
     "enabled": false
