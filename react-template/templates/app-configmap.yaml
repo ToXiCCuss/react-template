@@ -7,3 +7,9 @@ metadata:
 data:
   application.yaml: |
     spring:
+      threads:
+        virtual:
+          enabled: true
+    springdoc:
+      swagger-ui:
+        use-root-path: true

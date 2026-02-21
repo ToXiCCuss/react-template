@@ -12,11 +12,11 @@
     </parent>
 
     <groupId>de.rjst</groupId>
-    <artifactId>react-template-parent</artifactId>
+    <artifactId>react-template</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
-    <name>react-template-parent</name>
+    <name>react-template</name>
     <description>react frontend</description>
 
     <modules>
@@ -27,25 +27,5 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>com.amashchenko.maven.plugin</groupId>
-                <artifactId>gitflow-maven-plugin</artifactId>
-                <version>1.21.0</version>
-                <configuration>
-                    <gitFlowConfig>
-                        <productionBranch>master</productionBranch>
-                        <developmentBranch>develop</developmentBranch>
-                    </gitFlowConfig>
-                    <allowSnapshots>true</allowSnapshots>
-                    <skipTestProject>true</skipTestProject>
-                    <pushRemote>false</pushRemote>
-                    <fetchRemote>false</fetchRemote>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
 
 </project>

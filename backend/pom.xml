@@ -5,13 +5,13 @@
 
   <parent>
     <groupId>de.rjst</groupId>
-    <artifactId>react-template-parent</artifactId>
+    <artifactId>react-template</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <relativePath>../pom.xml</relativePath>
   </parent>
 
-  <artifactId>react-template</artifactId>
-  <name>react-template</name>
+  <artifactId>react-template-backend</artifactId>
+  <name>backend</name>
 
   <properties>
     <java.version>25</java.version>
@@ -21,7 +21,7 @@
   <dependencies>
     <dependency>
       <groupId>de.rjst</groupId>
-      <artifactId>frontend-react</artifactId>
+      <artifactId>frontend-template-frontend</artifactId>
       <version>0.0.1-SNAPSHOT</version>
       <scope>runtime</scope>
     </dependency>
@@ -38,9 +38,11 @@
       <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
       <version>3.0.1</version>
     </dependency>
+
+    <!--OPS-->
     <dependency>
       <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-starter-validation</artifactId>
+      <artifactId>spring-boot-starter-actuator</artifactId>
     </dependency>
 
     <!--Util-->
@@ -102,6 +104,9 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-maven-plugin</artifactId>
         <configuration>
+          <image>
+            <name>${project.parent.name}:${project.parent.version}</name>
+          </image>
           <excludes>
             <exclude>
               <groupId>org.projectlombok</groupId>

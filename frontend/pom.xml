@@ -10,7 +10,9 @@
         <version>0.0.1-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
-    <artifactId>frontend-react</artifactId>
+
+    <artifactId>frontend-template-frontend</artifactId>
+    <name>frontend</name>
 
     <properties>
         <!-- renovate: datasource=node-version depName=node -->
