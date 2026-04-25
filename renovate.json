@@ -17,7 +17,7 @@
         "major"
       ],
       "automerge": false,
-      "groupName": "all major-updates"
+      "groupName": "major"
     },
     {
       "matchUpdateTypes": [
@@ -25,7 +25,7 @@
         "patch"
       ],
       "automerge": true,
-      "groupName": "all minor and patch updates"
+      "groupName": "minor+patch"
     }
   ],
   "ignoreTests": true,
