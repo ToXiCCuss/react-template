@@ -29,8 +29,8 @@
   "ignoreTests": true,
   "maven": {
     "ignoreDeps": [
-      "de.rjst:react-template-parent",
-      "de.rjst:frontend"
+      "de.rjst:react-template",
+      "de.rjst:frontend-template-frontend"
     ]
   }
 }
