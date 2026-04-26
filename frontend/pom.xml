@@ -11,7 +11,7 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <artifactId>frontend-template-frontend</artifactId>
+    <artifactId>react-template-frontend</artifactId>
     <name>frontend</name>
 
     <properties>

@@ -21,8 +21,8 @@
   <dependencies>
     <dependency>
       <groupId>de.rjst</groupId>
-      <artifactId>frontend-template-frontend</artifactId>
-      <version>0.0.1-SNAPSHOT</version>
+      <artifactId>react-template-frontend</artifactId>
+      <version>${project.version}</version>
       <scope>runtime</scope>
     </dependency>
 
