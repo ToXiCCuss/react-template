@@ -17,7 +17,7 @@
         "major"
       ],
       "automerge": false,
-      "groupName": "major"
+      "groupName": "dependencies"
     },
     {
       "matchUpdateTypes": [
@@ -25,7 +25,7 @@
         "patch"
       ],
       "automerge": true,
-      "groupName": "minor+patch"
+      "groupName": "dependencies minor+patch"
     }
   ],
   "ignoreTests": true,
