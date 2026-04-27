@@ -6,7 +6,7 @@
 
     <parent>
         <groupId>de.rjst</groupId>
-        <artifactId>react-template-parent</artifactId>
+        <artifactId>react-template</artifactId>
         <version>0.0.1-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
