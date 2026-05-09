@@ -16,6 +16,6 @@ public abstract class PlaywrightIT {
     @Test
     void test(Page page) {
         page.navigate("http://localhost:" + port);
-        assertThat(page).hasTitle("Finance Frontend");
+        assertThat(page).hasTitle("React + Spring Boot");
     }
 }
